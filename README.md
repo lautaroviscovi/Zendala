@@ -12,5 +12,5 @@ The app is secured with **JsonWeb Token**, password hash provided from **Bcrypt*
 
 ## Deploy 🚀
 
-The backend is deployed in Heroku and can visit clicked **[here](http://zendala.herokuapp.com/)**
+The backend is deployed in Heroku and can visit clicked **[here](http://zendala.herokuapp.com/)**.
 The frontend is deployed using Vercel and can visit clicked **[here](https://zendala.vercel.app)**
