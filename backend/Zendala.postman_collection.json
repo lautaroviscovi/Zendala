@@ -1,0 +1,132 @@
+{
+	"info": {
+		"_postman_id": "6531e386-f4c1-4f67-baa7-22a641a37657",
+		"name": "Zendala",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Admin",
+			"item": [
+				{
+					"name": "Admin",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"admin@zenda.la\",\n    \"password\": \"zendala1234\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:4000/api/adm/new",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"adm",
+								"new"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login Admin",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"admin@zenda.la\",\n    \"password\": \"zendala1234\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:4000/api/adm/",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"adm",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Users / Customers",
+			"item": [
+				{
+					"name": "Get All Users / Customers",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2MDdiOTBiOWQ2NDVkYTIzNWFhMzIyNTQiLCJpYXQiOjE2MTg3MTE5NjIsImV4cCI6MTYxODcxOTE2Mn0.vK29mcEHNnXk6-wAPfsnZ4As_Mg48a4f2y_Nx7AWbOQ",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:4000/api/auth/users",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"auth",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New User / Customer",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Elon\",\n    \"last_name\": \"Musk\",\n    \"email\": \"eloncito@boringcompany.com\",\n    \"address\": {\n        \"country_code\": \"US\",\n        \"state\": \"Florida\",\n        \"city\": \"Tampa\",\n        \"line1\": \"FL\",\n        \"line2\": null,\n        \"postal_code\": \"12345\"\n    },\n    \"phone_number\": 11294560\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:4000/api/auth/new",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"auth",
+								"new"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

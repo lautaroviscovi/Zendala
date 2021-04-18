@@ -19,13 +19,11 @@ const createAdmin = async ( req, res = response ) => {
         
         admin = new Admin( req.body );
 
-        // Encriptar pass
         const salt = bcrypt.genSaltSync();
         admin.password = bcrypt.hashSync( password, salt );
     
         await admin.save();
 
-        // Generar JWT
         const token = await generateJWT( admin.id, admin.name );
     
         res.status(201).json( {
