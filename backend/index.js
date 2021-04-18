@@ -1,7 +1,6 @@
 const express = require('express');
 require('dotenv').config();
 const cors = require('cors');
-const { createAdmin } = require('./controllers/admin.controller')
 const { dbConnection } = require('./database/config');
 
 const app = express();
