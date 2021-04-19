@@ -40,22 +40,22 @@ export const fetchWithToken = ( endpoint, data, method = 'GET' ) => {
     }
 };
 
-export const fetchCustomersWithToken = async (  data, method = 'GET' ) => {
-    
-    const url = `${ baseUrl }/auth/users`;
-    
-    const token = localStorage.getItem( 'token' ) || '';
+// export const FetchCustomersWithToken = async ( method = 'GET' ) => {
+//     const [customers, setCustomers] = useState( { customer: [] } );
 
-    const res = await fetch( url, {
-        method,
-        headers: {
-            'Content-type': 'application/json',
-            'x-token': token
-        },
-    })
+    // const url = `${ baseUrl }/auth/users`;
+    // const token = localStorage.getItem( 'token' ) || '';
+    // const get = await fetch( url, {
+    //     method,
+        // headers: {
+        //     'Content-type': 'application/json',
+        //     'x-token': token
+        // },
+//     })
 
-    const customersData = await res.json();
+//     setCustomers( { customer: get.data } )
     
+// };
     // const customers = customersData.map( customer => {
     //     return {
     //         name: customer.name,
@@ -69,9 +69,6 @@ export const fetchCustomersWithToken = async (  data, method = 'GET' ) => {
     //     }
     // })
     // console.log(customers)
-
-    return customersData;
     
-};
 
 // fetchCustomersWithToken();
