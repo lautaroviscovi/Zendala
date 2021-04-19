@@ -1,3 +1,9 @@
+.h1-login {
+    color: #FFFFFF;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+}
+
 .form-customer {
     display: block;
     max-width: 500px;

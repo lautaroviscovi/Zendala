@@ -36,11 +36,11 @@ export const AppRouter = () => {
                         
                         <PublicRoute path = '/'
                         exact component = { CustomersForm }
-                        isAuthenticated = { !!uid }
                         />
 
                         <PublicRoute path = '/auth/login'
                         component = { Login }
+                        isAuthenticated = { !!uid }
                         />
                     
 
