@@ -8,8 +8,8 @@ export const NavBar = () => {
     return (
         <>
         <nav className="navbar" role="navigation" aria-label="main navigation">
-        <div class="navbar-brand">
-            <a class="navbar-item" href="#">
+        <div className="navbar-brand">
+            <a className="navbar-item" href="#">
                 <img
                     src="https://zenda.la/wp-content/uploads/2020/08/logotipo-zendala-negro.png" width="132"
                     height="28" color='white'

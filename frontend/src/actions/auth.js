@@ -22,17 +22,6 @@ export const startLogin = ( email, password ) => {
     }
 };
 
-
-export const startLogout = () => {
-    return ( dispatch ) => {
-
-        localStorage.clear();
-        dispatch( logout() );
-        // dispatch( eventLogout() );
-    }
-};
-
-
 export const startChecking = () => {
     return async ( dispatch ) => {
         
@@ -58,9 +47,9 @@ const login = ( user ) => ( {
     payload: user
  } );
 
-const logout = () => ( { 
-    type: types.authLogout
- } )
+// const logout = () => ( { 
+//     type: types.authLogout
+//  } )
 
 const checkingFinish = () => ( {
     type: types.authCheckingFinish

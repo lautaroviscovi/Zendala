@@ -1,14 +1,8 @@
 const baseUrl = process.env.REACT_APP_API_URL;
 
-/**
- * Todas las peticiones que no requieren el token
- * pasan por ésta función que va a seleccionar
- * si estamos en ambiente de desarrollo o producción
- * y va a convertir en string toda la data que llegue
- * desde la DB
- */
+
 export const fetchWithoutToken = ( endpoint, data, method = 'GET' ) => {
-    const url = `${ baseUrl }/${ endpoint }`; // localhost:4000/api/auth localhost:4000/api/events
+    const url = `${ baseUrl }/${ endpoint }`;
 
     if ( method === 'GET' ) {
         return fetch( url );
@@ -22,15 +16,9 @@ export const fetchWithoutToken = ( endpoint, data, method = 'GET' ) => {
         } )
     }
 };
-/**
- * Todas las peticiones que requieren el token
- * pasan por ésta función que va a seleccionar
- * si estamos en ambiente de desarrollo o producción
- * * y va a convertir en string toda la data que llegue
- * desde la DB
- */
+
 export const fetchWithToken = ( endpoint, data, method = 'GET' ) => {
-    const url = `${ baseUrl }/${ endpoint }`; // localhost:4000/api/auth/new
+    const url = `${ baseUrl }/${ endpoint }`;
     const token = localStorage.getItem( 'token' ) || '';
 
     if ( method === 'GET' ) {
@@ -51,3 +39,39 @@ export const fetchWithToken = ( endpoint, data, method = 'GET' ) => {
         } )
     }
 };
+
+export const fetchCustomersWithToken = async (  data, method = 'GET' ) => {
+    
+    const url = `${ baseUrl }/auth/users`;
+    
+    const token = localStorage.getItem( 'token' ) || '';
+
+    const res = await fetch( url, {
+        method,
+        headers: {
+            'Content-type': 'application/json',
+            'x-token': token
+        },
+    })
+
+    const customersData = await res.json();
+    
+    // const customers = customersData.map( customer => {
+    //     return {
+    //         name: customer.name,
+    //         last_name: customer.last_name,
+    //         email: customer.email,
+    //         country_code: customer.address.country_code,
+    //         state: customer.address.state,
+    //         city: customer.address.city,
+    //         postal_code: customer.address.postal_code,
+    //         phone_number: customer.phone_number
+    //     }
+    // })
+    // console.log(customers)
+
+    return customersData;
+    
+};
+
+// fetchCustomersWithToken();
