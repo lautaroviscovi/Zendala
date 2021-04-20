@@ -30,6 +30,7 @@ Credentials = {
 - Use backend services before controllers functions
 - Reorganize folders and files in frontend (principally components)
 - Add user dashboard
+- Json picklist with countries code, states, cities and zip codes
 - Dockerize app
 
 ```
