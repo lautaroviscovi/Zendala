@@ -22,6 +22,17 @@ Credentials = {
 	},
 ```
 
+### Refactoring and fixes
+```
+- Clear form after send values
+- Optimize responsiveness of table
+- Optimize pages transitions to slower
+- Use backend services before controllers functions
+- Reorganize folders and files in frontend (principally components)
+- Add user dashboard
+
+```
+
 
 ![enter image description here](https://lh3.googleusercontent.com/1zhgy1Qns4lFTmrnvwNzrcsJkFKQLfguXbW39QPSy3r-mvHI4gs6OZ3Q5k9COMyHb2CTvyUmF7Ka3mWZ9-GwJ13S3zX4O5NYSfXdJxvZ2BuNZ0DdkNVu6FwRcuykaKDIpqMz2Vqhk6CAeDmjrteVIMjPJA3aloLewfZzBuJfnAVLoJqkPKQebBNnvkGcGXK6w6BHgrYcmWn-F5EppSE5BJbES5lpG_PJTRRZri0cC8h0iB-1da5U0u5cqL86c9jXAo__2I4xZepAoaYMfsXC4C_cVGskJBnoWNTdOnKgouleh-0CKsg6YUWYJ-OFXSOzZ22VG4SFKGMCUL1MemB6NnQ8Gm9q1hxzd-tHlmZaM3k2fXKRm1yXytw3xP1Lm3iQnENprYwYUqpXHCs9WbAjN_vTDvboSgZkDLNJE7W81Ae-_FprS3bEmB0-hmrec9_2qaN5g_8lHLG7BuTaFqQ6lzxKN-CeB0FONEQCFw6yB7xpOz5V-0PZEDvvdTVchhktjBfYOhOrGAA2pfUuazjunIirH3xdeBzsgYE3UDskSm_7uqzoKIS0tV5Jq3zJUOXSHs_EXjROvBSz5Fc74NeW6lfT0Iwvz_67ubc-LpLclR5czlBZR5CafRFsukeTPoGvJaJEgpiZADyXim7zTyMRq42oqaAde3mhsAti5ovEVJpg0fL5ys45bVziqabu3nLtRkiCSObqnmM8IgRSVbH-ZkUE=w1197-h748-no?authuser=1)
 
