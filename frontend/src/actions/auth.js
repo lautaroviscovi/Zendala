@@ -42,6 +42,21 @@ export const startChecking = () => {
     }
 };
 
+export const startRegister = ( name, last_name, email, country_code, state, city, postal_code, phone_number ) => {
+    return async ( dispatch ) => {
+        
+        const response = await fetchWithoutToken( 'auth/new' , { name, last_name, email, country_code, state, city, postal_code, phone_number }, 'POST' );
+        const body = await response.json();
+        
+        if ( body.Ok ) {
+            console.log('Registro completo!')
+            
+        } else {
+            Swal.fire('Error', body.msg, 'error');
+        }
+    }
+};
+
 export const startLogout = () => {
     return ( dispatch ) => {
 

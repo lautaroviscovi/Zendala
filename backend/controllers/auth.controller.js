@@ -12,7 +12,6 @@ const createUser = async ( req, res = response ) => {
             country_code,
             state,
             city,
-            address,
             postal_code,
             phone_number
         } = req.body;
