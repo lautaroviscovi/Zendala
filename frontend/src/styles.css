@@ -1,0 +1,42 @@
+.h1-login {
+    color: #FFFFFF;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+}
+
+.form-customer {
+    display: block;
+    max-width: 500px;
+    justify-content: center;
+}
+
+.section-customer {
+    padding: 1.6rem 1.5rem;
+    background-image: linear-gradient(237deg, #fb542b 0%, #392dd1 100%) !important;
+    border-radius: 0% 0% 23% 11%;
+    margin-bottom: 40px;
+}
+
+.text-customer {
+    font-size: 30px;
+}
+
+#nav-button{
+    border-radius: 50px;
+    color: #FFFFFF !important;
+    transition: all .25s ease-in-out;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid rgba(255, 255, 255, .5);
+}
+
+.navbar {
+    background-color: white;
+    min-height: 3.25rem;
+    background-image: linear-gradient(237deg, #fb542b 0%, #392dd1 100%) !important;
+    position: relative;
+    z-index: 30;
+}
+
+.navbarBasicExample {
+    background-image: linear-gradient(237deg, #fb542b 0%, #392dd1 100%) !important;
+}
